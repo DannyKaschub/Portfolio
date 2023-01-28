@@ -1,0 +1,77 @@
+@import'src/styles.sass'
+.about_me
+    margin-top: 1000px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.text_container
+    margin-left: 100px
+
+.small_pic
+    width: 500px
+    border: solid 4px $green
+    border-radius: 50%
+
+
+.text_fields
+    width: 700px
+
+.text_field
+    padding-bottom: 30px
+    display: flex
+    font-size: 16px
+
+    img
+        width: 40px
+        height: 40px
+        padding: 30px
+    
+
+h1
+    font-size: 90px
+    font-weight: 700
+
+.pic_desing
+    display: flex
+    align-items: center
+
+.colorline
+    width: 200px
+    height: 4px
+    background-color: $green
+
+
+@media ( max-width: 1600px )
+    .small_pic
+        width: 400px
+    .text_fields
+        width: 600px
+
+@media ( max-width: 1300px )
+    .small_pic
+        width: 300px
+
+    .text_fields
+        width: 500px
+
+    .colorline
+        width: 100px
+
+@media ( max-width: 1000px )
+    .pic_desing
+        display: none
+
+    .text_container
+        margin: 0
+        width: 100% !important
+
+    .textfields
+        display: flex
+        justify-content: center
+        width: 100px
+
+    h1
+        display: flex
+        justify-content: center
+    

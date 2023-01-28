@@ -1,0 +1,69 @@
+@import'src/styles.sass'
+
+header
+    background-color: $darkBlue
+    height: $heightHeader
+    padding: 0 $standardMargin 0 $standardMargin
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.logo
+    display: flex
+    font-size: 45px
+    font-weight: 700
+    :first-child
+        color: $green
+    :last-child
+        color: $purple
+
+    p
+        margin: 0
+
+nav ul
+    display: flex
+    gap: 30px
+    li
+        list-style: none
+        font-size: 23px
+        a
+            color: white
+            text-decoration: none
+
+.mobile_menu_button
+    display: none
+    flex-direction: column
+    gap: 5px
+    .bar
+        height: 4px
+        width: 30px
+        background-color: white
+        border-radius: 5px
+
+.mobile_menu
+    position: absolute
+    top: $heightHeader
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $darkBlueTransparent
+    display: none
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 50px
+    div
+        a
+            color: white
+            font-size: 28px
+            text-decoration: none
+
+@media ( max-width: 1000px )
+    header
+        padding: 0 50px 0 50px
+
+    .mobile_menu_button
+        display: flex
+
+    nav ul
+        display: none

@@ -1,0 +1,59 @@
+@import'src/styles.sass'
+    
+.footer
+    background-color: $darkBlue
+    height: 300px
+    border-top: solid 4px $green
+
+
+.footer_container
+    height: 60%     
+    margin: 0 $standardMargin 0 $standardMargin
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+.name
+    display: flex
+    font-size: 40px
+    color: white
+    font-weight: bold
+    p
+        margin: 0
+    :first-child
+        color: $purple
+    :last-child
+        color: $green
+
+.copyright
+    font-size: 23px
+    font-weight: 400
+
+.icons
+    display: flex
+    gap: 30px
+    a
+        cursor: pointer
+
+.impressum
+    margin-left: $standardMargin
+    a
+        color: white
+        text-decoration: none
+        font-size: 16px
+
+@media ( max-width:  1000px)
+    .footer_container
+        padding-top: 50px
+        flex-direction: column
+        align-items: center
+
+    .impressum
+        margin-left: 0
+        margin-top: 30px
+        width: 100%
+        display: flex
+        justify-content: center
+
+            
+    
