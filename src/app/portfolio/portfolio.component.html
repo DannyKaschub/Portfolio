@@ -1,0 +1,27 @@
+<div class="headline">
+    <div class="colorline">
+
+    </div>
+    <h1>Portfolio</h1>
+    <div class="colorline">
+
+    </div>
+</div>
+<div class="headtext">
+    <span>This page is a sample of my work - please feel free to try them out.</span>
+</div>
+
+<div class="projects">
+    <div class="project" *ngFor="let item of portfolio">
+        <div class="img_container"> <img src="{{ item.image}}" alt=""> </div>
+        <div class="content_container">
+            <h2>{{item.name}}</h2>
+            <h3>{{item.techs}}</h3>
+            <p>{{item.text}}</p>
+            <div class="links">
+                <a class="{{item.liveBTNActive}}" href="{{item.link}}" target="_blank">Live text</a>
+                <a class="git_link" href="{{item.github}}" target="_blank">Github</a>
+            </div>
+        </div>
+    </div>
+</div>

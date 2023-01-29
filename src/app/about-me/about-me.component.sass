@@ -63,15 +63,34 @@ h1
         display: none
 
     .text_container
-        margin: 0
-        width: 100% !important
+        margin-right: 100px
 
-    .textfields
-        display: flex
-        justify-content: center
-        width: 100px
+    .text_fields
+        width: 100%
 
     h1
         display: flex
         justify-content: center
-    
+
+@media ( max-width: 800px )
+    h1
+        font-size: 70px
+
+@media ( max-width: 700px )
+    .about_me
+        margin-top: 850px
+
+@media ( max-width: 600px ) 
+
+    h1
+        font-size: 50px  
+    span 
+        font-size: 13px
+
+    .text_container
+        margin-right: 50px
+        margin-left: 50px
+
+@media ( max-width: 500px )
+    .about_me
+        margin-top: 700px
