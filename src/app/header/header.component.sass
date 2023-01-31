@@ -34,6 +34,7 @@ nav ul
     display: none
     flex-direction: column
     gap: 5px
+    cursor: pointer
     .bar
         height: 4px
         width: 30px
@@ -47,16 +48,16 @@ nav ul
     right: 0
     bottom: 0
     background-color: $darkBlueTransparent
-    display: none
+    display: flex
     justify-content: center
     align-items: center
     flex-direction: column
     gap: 50px
-    div
-        a
-            color: white
-            font-size: 28px
-            text-decoration: none
+    z-index: 10
+    a
+        color: white
+        font-size: 22px
+        text-decoration: none
 
 @media ( max-width: 1000px )
     header

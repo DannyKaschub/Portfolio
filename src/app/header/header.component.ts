@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent {
+  showMenu = false;
 
+  toggleMenu(){
+    this.showMenu = !this.showMenu;
+  }
+
+  closeMenu(){
+    this.showMenu = false;
+  }
 }

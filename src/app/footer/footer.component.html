@@ -1,4 +1,20 @@
 
+<section *ngIf="imprintactive" class="imprint">
+    <h1>Impressum</h1>
+    <div>
+        <p>Danny Kaschub</p>
+        <p>Weinholdstraße 55</p>
+        <p>08468 Reichenbach/Vogt</p>
+    </div>
+    
+    <div>
+        <p>Vertretungsberechtigte Gesellschafter: Danny Kaschub</p>
+        <p>Telefon: +49 173 3041649</p>
+        <p>Email: dannykaschub98@gmail.com</p>
+    </div>
+</section>
+
+
 <div class="footer">
     <div class="footer_container">
         <div class="name"> 
@@ -12,8 +28,7 @@
         </div>
     </div>
 
-    <div class="impressum">
-        <a href="">Impressum</a>
+    <div (click)="toggleImprint()" class="impressum">
+        <span>Impressum</span>
     </div>
 </div>
-

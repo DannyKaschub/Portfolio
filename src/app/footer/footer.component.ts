@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.sass']
 })
 export class FooterComponent {
+imprintactive = false;
 
+toggleImprint(){
+  this.imprintactive = !this.imprintactive;
+}
 }

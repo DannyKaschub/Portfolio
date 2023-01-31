@@ -9,15 +9,15 @@
             <li><a href="#portfolio">Portfolio</a></li>
         </ul>
     </nav>
-    <div class="mobile_menu_button">
+    <div (click)="toggleMenu()" class="mobile_menu_button">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-    <div class="mobile_menu">
-        <div><a href="">About me</a></div>
-        <div><a href="">My skills</a></div>
-        <div><a href="">Portfolio</a></div>
-        <div><a href="">Contact</a></div>
+    <div *ngIf="showMenu" class="mobile_menu">
+        <a (click)="closeMenu()" href="#about_me">About me</a>
+        <a (click)="closeMenu()" href="#skills">Skills</a>
+        <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+        <a (click)="closeMenu()" href="#contact">Contact</a>
     </div>
 </header>

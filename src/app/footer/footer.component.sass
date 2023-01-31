@@ -37,10 +37,22 @@
 
 .impressum
     margin-left: $standardMargin
-    a
-        color: white
-        text-decoration: none
+    cursor: pointer
+    span
         font-size: 16px
+
+.imprint
+    width: 100vw
+    height: calc( 100vh - 300px )
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+    gap: 30px
+    margin-bottom: 50px
+    h1
+        font-size: 70px
 
 @media ( max-width:  1000px)
     .footer_container
@@ -56,4 +68,8 @@
         justify-content: center
 
             
-    
+@media ( max-width:  600px)
+    .imprint
+        height: 100vh
+        h1
+            font-size: 40px
