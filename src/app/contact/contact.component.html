@@ -1,4 +1,4 @@
-<div class="headline">
+<div class="headline" id="contact">
     <div class="colorline"></div>
     <h1>Contact</h1>
 </div>
@@ -11,20 +11,18 @@
     </div>
 
     <div class="form_container">
-        <form action="">
-            <input type="text" name="name" id="name" placeholder="Your name">
-            <span class="error-msg-name">Your name is required</span>
-            <input type="email" name="email" id="email" placeholder="Your E-Mail">
-            <span class="error-msg-email">Your E-Mail is required</span>
-            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-            <span class="error-msg-message">Your Message is empty</span>
-            <button>Send message :)</button>
+        <form action="https://Danny-Kaschub.de/mail.php" method="post">
+            <input required type="text" name="name" id="name" placeholder="Your name">
+            <input required type="email" name="email" id="email" placeholder="Your E-Mail">
+            <textarea required name="message" id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send message :)</button>
         </form>
     </div>
 </div>
 
 <div class="arrow_up">
-    <img src="assets/img/icons/Arrow_up.png" alt="">
+    <a href="#header"><img src="assets/img/icons/Arrow_up.png" alt=""></a>
+    
 </div>
 
 

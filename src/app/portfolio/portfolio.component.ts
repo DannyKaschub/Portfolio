@@ -40,7 +40,7 @@ export class PortfolioComponent {
     techs : "Angular | TypeScript | SASS | HTML",
     text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     link: "",
-    github:"",
+    github:"https://github.com/DannyKaschub/Portfolio",
     liveBTNActive:"disable"
   }
 
