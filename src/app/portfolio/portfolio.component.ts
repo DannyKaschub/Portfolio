@@ -8,6 +8,15 @@ import { Component } from '@angular/core';
 export class PortfolioComponent {
   portfolio = [
     {
+      name : "Join", 
+      image : "assets/img/lapis/Lapi_Join.png", 
+      techs : "JavaScript | HTML | CSS",
+      text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      link: "https://danny-kaschub.de/Join/index.html",
+      github:"https://github.com/DannyKaschub/Join",
+      liveBTNActive:"active"
+    },
+    {
     name : "El Pollo Loco", 
     image : "assets/img/lapis/Lapi_polloLoco.png", 
     techs : "JavaScript | HTML | CSS",
@@ -23,15 +32,6 @@ export class PortfolioComponent {
     text: "A small Game-app inspired by the popular drinking card game, that works on multiple devices.",
     link: "https://ring-of-fire-784e6.web.app/",
     github:"https://github.com/DannyKaschub/Ring-of-Fire",
-    liveBTNActive:"active"
-  },
-  {
-    name : "Join", 
-    image : "assets/img/lapis/Lapi_Join.png", 
-    techs : "JavaScript | HTML | CSS",
-    text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-    link: "https://danny-kaschub.de/Join/index.html",
-    github:"https://github.com/DannyKaschub/Join",
     liveBTNActive:"active"
   },  
   {
